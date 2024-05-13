@@ -16,3 +16,10 @@ The convolutional layers have a kernel size of 3 × 3 with 1 pixel of padding an
 
 The VGG19 model is similar to the VGG16 model, but with three additional convolutional layers.
 
+> TRAIN:
+
+!python main.py --LR_path Data/train_LR --GT_path Data/train_HR
+
+> TEST:
+
+!python main.py --mode test_only --LR_path test_data --generator_path pretrained_models/SRGAN.pt
